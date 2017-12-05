@@ -194,6 +194,7 @@ class Cardcom
         if (!empty($this->invoice)) {
             $invoice = [
                 'invCreateInvoice'   => true,
+                'InvCustNumber'      => $this->invoice['customer_id'] ?? null,
                 'invCusAddress1'     => $this->invoice['address_1'] ?? null,
                 'invCusAddress2'     => $this->invoice['address_2'] ?? null,
                 'invCusCity'         => $this->invoice['city'] ?? null,
